@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <!-- HEAD ----------------------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
 
-<title>Gaston's Weather API</title>
-</head>
-<body>
-  
+    <!-- TITLE ---------------------->
+    <title>Gaston's Weather App</title>
+  </head>
 
-    <div id = "weather-container">
-      <h2>Hows the weather?</h2>
-      <input type = "text" id="city" placeholder = "City name">
-      <button onclick = "getWeather()"> Search</button>
+  <body>
+    <!-- WEATHER CONTAINER ------->
+    <div id="weather-container">
+      <h2>How's the weather?</h2>
+      <input type="text" id="city" placeholder="City name" />
+      <button onclick="getWeather()">Search</button>
 
+      <!--temperature-->
+      <div id="temp-div"></div>
 
-      <img id = "weather-icon" alt = "Weather Icon">
-
-      <div id = "temp-div"></div>
-
-      <div id = "weather-info"></div>
-
-      <div id = "hourly-forecast"></div>
+      <!--weather condition-->
+      <div id="weather-info"></div>
     </div>
 
-    <script src= "index.js"></script>
+    <!--NAVBAR---------->
+    <nav>
+      <ul>
+        <li><a href="#" id="nav-temperature">Temperature</a></li>
+        <li><a href="#" id="nav-conditions">Conditions</a></li>
+      </ul>
+    </nav>
 
-</body>
+    <!--ICON LINK---------->
+    <footer>
+      <a
+        href="https://www.weather.gov"
+        target="_blank"
+        aria-label="Visit the National Weather Service website"
+      >
+        <i class="fas fa-cloud-sun"></i>
+        <!-- FontAwesome weather icon -->
+      </a>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
 </html>
